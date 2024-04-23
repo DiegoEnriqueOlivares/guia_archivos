@@ -19,7 +19,7 @@ public class Ejercicio001 {
 
             String linea;
             while ((linea = reader.readLine()) != null) {
-                String[] palabras = linea.split("\\s+"); // Aquí \\s+ indica uno o más espacios en blanco
+                String[] palabras = linea.split("\\s+"); 
 
                 for (String pal : palabras) {
                     if (pal.toLowerCase().equals(palabra.toLowerCase())) {
