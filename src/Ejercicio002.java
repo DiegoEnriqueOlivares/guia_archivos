@@ -21,8 +21,10 @@ public class Ejercicio002 {
             FileReader lector = new FileReader(archivo);
             BufferedReader reader = new BufferedReader(lector);
 
+            
             String linea;
             while ((linea = reader.readLine()) != null) {
+                linea = linea.replaceAll("[\\#$@~!¡&*()\\[\\];.,:?^`\\n\\d\\\\/]+", "");
                 String[] palabras = linea.split("\\s+");
             
                 for (String pal : palabras) {

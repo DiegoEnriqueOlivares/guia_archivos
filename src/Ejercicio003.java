@@ -35,6 +35,7 @@ public class Ejercicio003 {
             reader = new BufferedReader(new FileReader(archivoTexto));
             String linea;
             while ((linea = reader.readLine()) != null) {
+                linea = linea.replaceAll("[\\#$@~!¡&*()\\[\\];.,:?^`\\n\\d\\\\/]+", "");
                 String[] palabras = linea.split("\\s+");
                 for (String palabra : palabras) {
                     String palabraLowerCase = palabra.toLowerCase();
